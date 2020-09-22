@@ -15,7 +15,7 @@ class MetaState extends State {
 }
 
 class EditState extends State {
-    constructor() {
+  constructor() {
       super();
     }
 
