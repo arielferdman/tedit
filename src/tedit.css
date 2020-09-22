@@ -1,9 +1,16 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-gap: 10px;
+    grid-template-columns: 20vw 20vw 30vw;
+    grid-template-rows: 15vw 30vw 10vw;
+    grid-template-areas:
+        "editor editor suggester"
+        "editor editor browser"
+        "footer footer footer";
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vw;
     background-color: #fff;
     color: #444;
+
 }
 
 .panel {
@@ -12,4 +19,16 @@
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
+}
+
+#editor {
+    grid-area: editor;
+}
+
+#suggester {
+    grid-area: suggester;
+}
+
+#browser {
+    grid-area: browser;
 }

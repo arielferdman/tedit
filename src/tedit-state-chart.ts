@@ -1,10 +1,12 @@
-
 class State {
   editor: HTMLDivElement;
   suggester: HTMLDivElement;
+  actions: Array<Function>;
+
   constructor() {
     this.editor = document.querySelector('#editor');
     this.suggester = document.querySelector('#suggester')
+    this.actions = [];
   }
 }
 
@@ -19,15 +21,15 @@ class EditState extends State {
       super();
     }
 
-    printchr(chr: string): boolean {
-      this.editor.innerHTML += chr;
-      return true;
-    }
+  printchr(chr: string): boolean {
+    this.editor.innerHTML += chr;
+    return true;
+  }
 
-    focusEditor(): boolean {
-      this.editor.focus();
-      return true;
-    }
+  focusEditor(): boolean {
+    this.editor.focus();
+    return true;
+  }
 }
 
 class EditorStateChart {
@@ -36,4 +38,9 @@ class EditorStateChart {
   constructor() {
     this.state = new EditState();
   }
+}
+
+window.onload = () => {
+  var esc = new EditorStateChart();
+  
 }
