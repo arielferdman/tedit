@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.vscode
+
+>>>>>>> 3ab4045... Update .gitignore
 # Logs
 logs
 *.log
