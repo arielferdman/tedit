@@ -3,6 +3,7 @@ class State {
   editor: HTMLDivElement;
   suggester: HTMLDivElement;
   actions: Array<Function>;
+  db: IDBOpenDBRequest;
 
   transition(to: State): State {
     this.exit();
