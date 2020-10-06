@@ -41,3 +41,11 @@ function prepareOutput(test) {
   }
   return output;
 }
+function execute(test) {
+  try {
+    test.result = test.run();
+  } catch (exception) {
+    test.result = false;
+    test.exception = exception;
+  }
+}
