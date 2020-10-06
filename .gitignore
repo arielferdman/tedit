@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 =======
 .vscode
+<<<<<<< HEAD
 
 >>>>>>> 3ab4045... Update .gitignore
 # Logs
@@ -112,3 +113,6 @@ dist
 .vscode
 node_modules    
 >>>>>>> ede0bda... first rewrite. testing  working
+=======
+node_modules
+>>>>>>> c4f3a27... testing removal of git second user
