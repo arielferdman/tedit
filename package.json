@@ -1,0 +1,27 @@
+{
+  "name": "tedit-new",
+  "version": "0.0.2",
+  "description": "a text editor",
+  "main": "test-tedit-state-charts.js",
+  "dependencies": {
+    "jest": "^26.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arielferdman/tedit.git"
+  },
+  "keywords": [
+    "text",
+    "editor"
+  ],
+  "author": "ariel ferdman",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/arielferdman/tedit/issues"
+  },
+  "homepage": "https://github.com/arielferdman/tedit#readme"
+}
