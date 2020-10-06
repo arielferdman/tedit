@@ -21,9 +21,11 @@ function runSuite() {
     log(output, test);
   });
 }
+
 function log(output, test) {
   console.log("%c " + `${output}`, test.output_style);
 }
+
 function prepareOutput(test) {
   test.output_style =
     console_output_style + `background: ${output_style[test.result]};`;
@@ -41,6 +43,7 @@ function prepareOutput(test) {
   }
   return output;
 }
+
 function execute(test) {
   try {
     test.result = test.run();

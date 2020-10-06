@@ -4,11 +4,12 @@
   "description": "a text editor",
   "main": "test-tedit-state-charts.js",
   "dependencies": {
-    "jest": "^26.4.2"
+    "http-server": "^0.12.3",
+    "open": "^7.3.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node"
+    "test": "node test-tedit-state-charts.js"
   },
   "repository": {
     "type": "git",
